@@ -1,16 +1,23 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
 <html>
 <head>
   <meta charset="utf-8">
   <title>Тимур Исаев</title>
+  <meta name="viewport" content="width=device-width, user-scalable=yes">
 </head>
 <body>
 <style type="text/css">
-html, body{margin: 0;       }
+html, body{margin: 0;}
 
-</style>
 
-<style>;
+@media screen and (max-width: 479px) {
+/* стили для телефонов - начало */
+html{background-color: red;}
+.photo{width:100%!important;}
+.welcome{
+    padding: 15% 0 125px 0!important;}
+
+}
 
 @font-face{font-family:'Myraid Set Pro Text';src:url('myriad-set-pro_text.woff') format("woff")}
 
@@ -20,15 +27,15 @@ html, body{margin: 0;       }
 
 .head__item{color:#FFF;display: inline-block;padding: 17px;cursor: pointer;}
 .head__item:hover{opacity:.9;}
-}
 
+.photo{display: inline-block;width:25%;margin-right:-7px;padding:9px 9px}
+
+
+.welcome__about_me{ padding: 0 33px;}
 </style>
-
-
 <div>
     
-
-<div class=""  style="background-color: #000000;position: relative;height: 910px;">
+<div class=""  style="background-color: #000000;position: relative;height: 567px;">
     <div style="p;">
         
     <div style="background-image: url('1645160482_31-phonoteka-org-p-chernii-dorogoi-fon-37.jpg');background-size: cover;background-position: center 12% ; top:0;left:0;right:0;bottom:0;position: absolute;"></div>
@@ -39,8 +46,8 @@ html, body{margin: 0;       }
 
     </div>
 
-<div class="" style="text-align:center;padding:15% 125px 125px 125px;position: relative;z-index: 999;color:#FFF; ">
-    <div style="font-weight: bold; font-size:47px;margin-bottom: 54px;line-height:114px;"> 
+<div class="welcome" style="text-align:center;padding:117px 0 97px 0;position: relative;z-index: 999;color:#FFF; ">
+    <div style="font-weight: bold; font-size:47px;margin-bottom: 54px;line-height:114px;" class="welcome__about_me"> 
         Здравствуйте!<div style="font-size:23px">Я разработчик программного обеспечения <i style="border-bottom:1px soild #FFF;">Исаев Тимур</i></div>
     </div>
     <div>
@@ -75,7 +82,7 @@ html, body{margin: 0;       }
 
 
 
-    <div style="display: inline-block;width:25%;margin-right:-7px;padding:9px 9px;">
+    <div class="photo">
       <div style="width: 100%;height:25vh;background-size: cover;background-position: center; background-image: url('20190625_112743.jpg');border-radius:9px;" class="photo_how_block"></div>
       <div style="height:24px;margin-top:14px;font-size:.9em;">Фонтан</div>
       <div style="font-size:14px;margin-top:11px;">5 июня в 15:15</div>
@@ -90,7 +97,7 @@ html, body{margin: 0;       }
 
 
 
-    <div style="display: inline-block;width:25%;margin-right:-7px;padding:9px 9px;">
+    <div class="photo">
       <div style="width: 100%;height:25vh;background-size: cover;background-position: center; background-image: url('IMG_20220315_121339.jpg');border-radius:9px;" class="photo_how_block"></div>
       <div style="height:24px;margin-top:14px;font-size:.9em;">Зима</div>
       <div style="font-size:14px;margin-top:11px;">5 июня в 15:15</div>
@@ -105,7 +112,7 @@ html, body{margin: 0;       }
 
 
 
-    <div style="display: inline-block;width:25%;margin-right:-7px;padding:9px 9px;">
+    <div class="photo">
       <div style="width: 100%;height:25vh;background-size: cover;background-position: center; background-image: url('IMG_20220523_122651.jpg');border-radius:9px;" class="photo_how_block"></div>
       <div style="height:24px;margin-top:14px;font-size:.9em;">Леденец</div>
       <div style="font-size:14px;margin-top:11px;">5 июня в 15:15</div>
@@ -120,7 +127,7 @@ html, body{margin: 0;       }
 
 
 
-    <div style="display: inline-block;width:25%;margin-right:-7px;padding:9px 9px;">
+    <div style="display: inline-block;width:25%;margin-right:-7px;padding:9px 9px;" class="photo">
       <div style="width: 100%;height:25vh;background-size: cover;background-position: center; background-image: url('IMG_20220410_154900.jpg');border-radius:9px;" class="photo_how_block"></div>
       <div style="height:24px;margin-top:14px;font-size:.9em;">Божья коровка</div>
       <div style="font-size:14px;margin-top:11px;">5 июня в 15:15</div>
@@ -142,7 +149,7 @@ html, body{margin: 0;       }
 
 
 
-    <div style="display: inline-block;width:25%;margin-right:-7px;padding:9px 9px;">
+    <div style="display: inline-block;width:25%;margin-right:-7px;padding:9px 9px;" class="photo">
       <div style="width: 100%;height:25vh;background-size: cover;background-position: center; background-image: url('20190620_141006.jpg');border-radius:9px;" class="photo_how_block"></div>
       <div style="height:24px;margin-top:14px;font-size:.9em;">Вид с окна</div>
       <div style="font-size:14px;margin-top:11px;">5 июня в 15:15</div>
