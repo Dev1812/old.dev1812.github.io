@@ -87,12 +87,18 @@ html{background-color: red;}
 function setSlide(id) {
 
 new Swiper('.mySwiper',{
-    initialSlide:id
+    initialSlide:id,
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    },
 })
 
 //document.querySelector('.mySwiper').style.display='block';
 
  document.querySelector('.swiper').style.display='block';
+
+
 }       
 
 </script>
