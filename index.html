@@ -232,17 +232,18 @@ html{background-color: red;}
 
 
     <!-- Swiper -->
-    <div class="swiper mySwiper" style="
+    <div class="swiper mySwiper" id="mySwiper" style="
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 9999;">
+    z-index: 9999;
+    padding: 14px 25px;">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
             
-
+            <div style="position: fixed;top:0;right:0;" onClick="document.getElementById('mySwiper').style.display='none';">х</div>
 
     <div class="photo">
       <div style="width: 100%;height:25vh;background-size: cover;background-position: center; background-image: url('20190624_183902.jpg');border-radius:9px;" class="photo_how_block"></div>
