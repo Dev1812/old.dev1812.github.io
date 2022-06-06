@@ -43,11 +43,13 @@ html{background-color: red;}
 
 
 
-<div class="welcome" style="text-align:center;padding:127px 0 97px 0;position: relative;z-index: 999;color:#FFF; ">
-    <div style="font-weight: bold; font-size:47px;margin-bottom: 54px;line-height:114px;color:#000;" class="welcome__about_me"> 
-        Здравствуйте!<div style="font-size:23px">Я - fullstack developer Исаев Тимур
-<div>Технологии: <span style="font-size:.7em;">html, css, javascript, php, mysql, sql, laravel fraemwork, etc. </span></div>
-
+<div class="welcome" style="text-align:center;padding:177px 0 97px 0;position: relative;z-index: 999;color:#FFF; ">
+    <div style="font-weight: bold; font-size:47px;margin-bottom: 7px;color:#000;" class="welcome__about_me"> 
+        Здравствуйте!
+        <div style="font-size:23px;">
+            <div style="margin: 29px 0 29px;">Я - программист Тимур</div>
+<div> <span style="font-size:.7em;">html, css, javascript, php, mysql, sql, laravel fraemwork, etc. </span></div></div>
+</div>
         </div>
     </div>
     <div>
@@ -200,13 +202,141 @@ html{background-color: red;}
 
 </div>
 
-<div style="border-top: 1px solid #DDD;text-align: center;padding:17px 0;font-size:.7em;background-color:#FFF   ;" >
-     Программист Исаев Тимур &copy;  2022 
+<div style="border-top: 1px solid #DDD;text-align: center;padding:17px 0;font-size:.7em;background-color:#FFF   ;font-weight: bold;" >
+    <div style="margin-bottom: 14px"> Программист Исаев Тимур &copy;  2022 </div>
+     <a href="mailto:timka_issaev@mail.ru" style="color:blue;text-decoration: none;">timka_issaev@mail.ru</a>
 </div>
 
-</div></div>
+</div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper" style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            
+
+
+    <div class="photo">
+      <div style="width: 100%;height:25vh;background-size: cover;background-position: center; background-image: url('20190624_183902.jpg');border-radius:9px;" class="photo_how_block"></div>
+      <div style="height:24px;margin-top:14px;font-size:.9em;">Питер ☺️</div>
+      <div style="font-size:14px;margin-top:11px;">6 июня в 13:39</div>
+    </div>
+
+
+        </div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+
+
+
+
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
 </body>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
 <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
 <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 </html>
