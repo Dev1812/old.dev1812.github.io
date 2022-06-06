@@ -67,6 +67,8 @@ html{background-color: red;}
 <style type="text/css">
 .photo_how_block{background-size: cover;
     transform: rotate(0deg);}
+
+
 </style>
 
 <div style="width:70%;margin:0 auto;text-align: center;padding-bottom: 74px;">
@@ -81,11 +83,25 @@ html{background-color: red;}
 
 
 
+<script type="text/javascript">
+function setSlide(id) {
+
+new Swiper('.mySwiper',{
+    initialSlide:id
+})
+
+//document.querySelector('.mySwiper').style.display='block';
+
+ document.querySelector('.swiper').style.display='block';
+}       
+
+</script>
 
 
 
 
-    <div class="photo">
+
+    <div class="photo" onClick="setSlide(0);">
       <div style="width: 100%;height:25vh;background-size: cover;background-position: center; background-image: url('20190624_183902.jpg');border-radius:9px;" class="photo_how_block"></div>
       <div style="height:24px;margin-top:14px;font-size:.9em;">Питер ☺️</div>
       <div style="font-size:14px;margin-top:11px;">6 июня в 13:39</div>
@@ -93,7 +109,9 @@ html{background-color: red;}
 
 
 
-    <div class="photo">
+
+
+    <div class="photo" onClick="setSlide(1);">
       <div style="width: 100%;height:25vh;background-size: cover;background-position: center; background-image: url('20180607_214410.jpg');border-radius:9px;" class="photo_how_block"></div>
       <div style="height:24px;margin-top:14px;font-size:.9em;" class="photo_image">Закат</div>
       <div style="font-size:14px;margin-top:11px;" class="photo_title">6 июня в 13:39</div>
@@ -106,7 +124,7 @@ html{background-color: red;}
 
 
 
-    <div class="photo">
+    <div class="photo" onClick="setSlide(2);">
       <div style="width: 100%;height:25vh;background-size: cover;background-position: center; background-image: url('20190625_112743.jpg');border-radius:9px;" class="photo_how_block"></div>
       <div style="height:24px;margin-top:14px;font-size:.9em;" class="photo_image">Фонтан</div>
       <div style="font-size:14px;margin-top:11px;" class="photo_title">5 июня в 16:11</div>
@@ -121,20 +139,20 @@ html{background-color: red;}
 
 
 
-    <div class="photo">
+    <div class="photo" onClick="setSlide(3);">
       <div style="width: 100%;height:25vh;background-size: cover;background-position: center; background-image: url('20210701_141044.jpg');border-radius:9px;" class="photo_how_block"></div>
       <div style="height:24px;margin-top:14px;font-size:.9em;">Растение</div>
       <div style="font-size:14px;margin-top:11px;">5 июня в 16:15</div>
     </div>
 
-    <div class="photo">
+    <div class="photo" onClick="setSlide(4);">
       <div style="width: 100%;height:25vh;background-size: cover;background-position: center; background-image: url('20180607_210355.jpg');border-radius:9px;" class="photo_how_block"></div>
       <div style="height:24px;margin-top:14px;font-size:.9em;" class="photo_image">Схема</div>
       <div style="font-size:14px;margin-top:11px;" class="photo_title">5 июня в 15:15</div>
     </div>
 
 
-    <div class="photo">
+    <div class="photo" onClick="setSlide(5);">
       <div style="width: 100%;height:25vh;background-size: cover;background-position: center; background-image: url('20210701_141035.jpg');border-radius:9px;" class="photo_how_block"></div>
       <div style="height:24px;margin-top:14px;font-size:.9em;">Цветочек </div>
       <div style="font-size:14px;margin-top:11px;">5 июня в 15:15</div>
@@ -142,7 +160,7 @@ html{background-color: red;}
 
 
 
-    <div class="photo">
+    <div class="photo" onClick="setSlide(6);">
       <div style="width: 100%;height:25vh;background-size: cover;background-position: center; background-image: url('IMG_20220315_121339.jpg');border-radius:9px;" class="photo_how_block"></div>
       <div style="height:24px;margin-top:14px;font-size:.9em" class="photo_image">Зима</div>
       <div style="font-size:14px;margin-top:11px" class="photo_title">5 июня в 15:15</div>
@@ -157,7 +175,7 @@ html{background-color: red;}
 
 
 
-    <div class="photo">
+    <div class="photo" onClick="setSlide(7);">
       <div style="width: 100%;height:25vh;background-size: cover;background-position: center; background-image: url('IMG_20220523_122651.jpg');border-radius:9px;" class="photo_how_block"></div>
       <div style="height:24px;margin-top:14px;font-size:.9em;">Леденец</div>
       <div style="font-size:14px;margin-top:11px;">5 июня в 15:15</div>
@@ -172,7 +190,14 @@ html{background-color: red;}
 
 
 
-    <div style="display: inline-block;width:25%;margin-right:-7px;padding:9px 9px;" class="photo">
+
+
+
+
+
+
+
+    <div style="display: inline-block;width:25%;margin-right:-7px;padding:9px 9px;" class="photo" onClick="setSlide(8);">
       <div style="width: 100%;height:25vh;background-size: cover;background-position: center; background-image: url('IMG_20220410_154900.jpg');border-radius:9px;" class="photo_how_block"></div>
       <div style="height:24px;margin-top:14px;font-size:.9em;">Божья коровка</div>
       <div style="font-size:14px;margin-top:11px;">5 июня в 15:15</div>
@@ -187,14 +212,7 @@ html{background-color: red;}
 
 
 
-
-
-
-
-
-
-
-    <div style="display: inline-block;width:25%;margin-right:-7px;padding:9px 9px;" class="photo">
+    <div style="display: inline-block;width:25%;margin-right:-7px;padding:9px 9px;" class="photo" onClick="setSlide(9);">
       <div style="width: 100%;height:25vh;background-size: cover;background-position: center; background-image: url('20190620_141006.jpg');border-radius:9px;" class="photo_how_block"></div>
       <div style="height:24px;margin-top:14px;font-size:.9em;">Вид с окна</div>
       <div style="font-size:14px;margin-top:11px;">5 июня в 15:15</div>
@@ -209,7 +227,9 @@ html{background-color: red;}
 
 </div>
 
+<script type="text/javascript">
 
+</script>
 
 
 
@@ -238,7 +258,7 @@ html{background-color: red;}
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 9999;">
+    z-index: 9999;display: none;">
 
             <div style="position: fixed;top:0;right:0;
     padding: 21px 24px;
@@ -428,13 +448,15 @@ html{background-color: red;}
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
-    <script>
+    <script>/*
       var swiper = new Swiper(".mySwiper", {
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
-      });
+      });*/
+
+
     </script>
 
 
