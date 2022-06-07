@@ -4,6 +4,51 @@
   <meta charset="utf-8">
   <title>Тимур Исаев</title>
   <meta name="viewport" content="width=device-width, user-scalable=yes">
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    /><script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+
+
+<style type="text/css">
+    
+.footer__wrap{border-top: 1px solid #DDD;text-align: center;padding:17px 0;font-size:.7em;background-color:#FFF;font-weight: bold;}
+
+.footer__title{margin-bottom: 14px}
+
+.footer_copy{color:blue;text-decoration: none;}
+</style>
+<script type="text/babel">
+
+
+
+
+
+    ReactDOM.render(
+      
+<div className="welcome__wrap">
+    <div className="welcome__about_me"> 
+        Здравствуйте!
+        <div className="welcome__wrap_block">
+            <div className="title">Я - программист Тимур</div>
+<div> <span className="welcome__wrap_body">html, css, javascript, php, mysql, sql, laravel fraemwork, etc. </span></div></div>
+</div>
+        </div>
+,
+      document.getElementById('reacjs_welcome__container')
+    );
+
+
+
+
+
+    </script>
+
+
 </head>
 <body>
 <style type="text/css">
@@ -35,6 +80,10 @@ html{background-color: red;}
 .photo_how_block{
     transform: rotate(180deg);}
 </style>
+
+
+
+
 <div>
     
 <div class=""  style="position: relative;height: 647px;border-bottom: 1px solid #DDD;">
@@ -91,9 +140,10 @@ new Swiper('.mySwiper',{
     navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
-    }
+    },
 })
 
+//document.querySelector('.mySwiper').style.display='block';
 
  document.querySelector('.swiper').style.display='block';
 
@@ -223,55 +273,20 @@ new Swiper('.mySwiper',{
       <div style="font-size:14px;margin-top:11px;">5 июня в 15:15</div>
     </div>
 
+</div>
 
 
-    <div style="display: inline-block;width:25%;margin-right:-7px;padding:9px 9px;" class="photo" onClick="setSlide(10);">
-      <div style="width: 100%;height:25vh;background-size: cover;background-position: center; background-image: url('20180410_172638.jpg');border-radius:9px;" class="photo_how_block"></div>
-      <div style="height:24px;margin-top:14px;font-size:.9em;">Стелла</div>
-      <div style="font-size:14px;margin-top:11px;">5 июня в 15:15</div>
-    </div>
+<div id="reacjs_footer"></div>
 
 
+</div>
 
 
+</div>
 
-    <div style="display: inline-block;width:25%;margin-right:-7px;padding:9px 9px;" class="photo" onClick="setSlide(11);">
-      <div style="width: 100%;height:25vh;background-size: cover;background-position: center; background-image: url('20180410_171315.jpg');border-radius:9px;" class="photo_how_block"></div>
-      <div style="height:24px;margin-top:14px;font-size:.9em;">река Урал</div>
-      <div style="font-size:14px;margin-top:11px;">5 июня в 15:15</div>
-    </div>
+<script type="text/javascript">
 
-
-
-
-
-
-
-
-    <div style="display: inline-block;width:25%;margin-right:-7px;padding:9px 9px;" class="photo" onClick="setSlide(12);">
-      <div style="width: 100%;height:25vh;background-size: cover;background-position: center; background-image: url('20180409_101340.jpg');border-radius:9px;" class="photo_how_block"></div>
-      <div style="height:24px;margin-top:14px;font-size:.9em;">Пуговица</div>
-      <div style="font-size:14px;margin-top:11px;">5 июня в 15:15</div>
-    </div>
-
-
-
-
-
-
-
-    <div style="display: inline-block;width:25%;margin-right:-7px;padding:9px 9px;" class="photo" onClick="setSlide(13);">
-      <div style="width: 100%;height:25vh;background-size: cover;background-position: center; background-image: url('20180408_212136.jpg');border-radius:9px;" class="photo_how_block"></div>
-      <div style="height:24px;margin-top:14px;font-size:.9em;">Вид с окна</div>
-      <div style="font-size:14px;margin-top:11px;">5 июня в 15:15</div>
-    </div>
-
-
-
-
-
-
-
+</script>
 
 
 
@@ -300,7 +315,7 @@ new Swiper('.mySwiper',{
         <div class="swiper-slide">
             
     <div class="photo">
-      <div style="width: 100%;height:25vh;background-size: cover;background-position: center; background-image: url('20190624_183902.jpg');border-radius:9px;" class="photo_how_block" onClick="setSlide(14);"></div>
+      <div style="width: 100%;height:25vh;background-size: cover;background-position: center; background-image: url('20190624_183902.jpg');border-radius:9px;" class="photo_how_block"></div>
       <div style="height:24px;margin-top:14px;font-size:.9em;">Питер ☺️</div>
       <div style="font-size:14px;margin-top:11px;">6 июня в 13:39</div>
     </div>
@@ -313,7 +328,7 @@ new Swiper('.mySwiper',{
 
 
     <div class="photo">
-      <div style="width: 100%;height:25vh;background-size: cover;background-position: center; background-image: url('20180607_214410.jpg');border-radius:9px;" class="photo_how_block" onClick="setSlide(15);"></div>
+      <div style="width: 100%;height:25vh;background-size: cover;background-position: center; background-image: url('20180607_214410.jpg');border-radius:9px;" class="photo_how_block"></div>
       <div style="height:24px;margin-top:14px;font-size:.9em;" class="photo_image">Закат</div>
       <div style="font-size:14px;margin-top:11px;" class="photo_title">6 июня в 13:39</div>
     </div>
@@ -334,7 +349,7 @@ new Swiper('.mySwiper',{
 
 
     <div class="photo">
-      <div style="width: 100%;height:25vh;background-size: cover;background-position: center; background-image: url('20190625_112743.jpg');border-radius:9px;" class="photo_how_block" onClick="setSlide(16);"></div>
+      <div style="width: 100%;height:25vh;background-size: cover;background-position: center; background-image: url('20190625_112743.jpg');border-radius:9px;" class="photo_how_block"></div>
       <div style="height:24px;margin-top:14px;font-size:.9em;" class="photo_image">Фонтан</div>
       <div style="font-size:14px;margin-top:11px;" class="photo_title">5 июня в 16:11</div>
     </div>
@@ -355,7 +370,7 @@ new Swiper('.mySwiper',{
 
 
         </div>
-        <div class="swiper-slide"  onClick="setSlide(17);">
+        <div class="swiper-slide">
             
 
 
@@ -366,12 +381,8 @@ new Swiper('.mySwiper',{
       <div style="font-size:14px;margin-top:11px;">5 июня в 16:15</div>
     </div>
 
-
         </div>
-
-
-
-        <div class="swiper-slide"   onClick="setSlide(18);">
+        <div class="swiper-slide">
             
 
 
@@ -383,7 +394,7 @@ new Swiper('.mySwiper',{
     </div>
 
         </div>
-        <div class="swiper-slide"  onClick="setSlide(19);" >
+        <div class="swiper-slide">
             
 
 
@@ -396,7 +407,7 @@ new Swiper('.mySwiper',{
 
 
         </div>
-        <div class="swiper-slide"  onClick="setSlide(20);">
+        <div class="swiper-slide">
             
 
 
@@ -416,7 +427,7 @@ new Swiper('.mySwiper',{
 
 
 
-        <div class="swiper-slide" onClick="setSlide(21);" >
+        <div class="swiper-slide">
             
 
 
@@ -438,7 +449,7 @@ new Swiper('.mySwiper',{
 
 
 
-    <div style="display: inline-block;width:25%;margin-right:-7px;padding:9px 9px;" class="photo" onClick="setSlide(22);">
+    <div style="display: inline-block;width:25%;margin-right:-7px;padding:9px 9px;" class="photo">
       <div style="width: 100%;height:25vh;background-size: cover;background-position: center; background-image: url('IMG_20220410_154900.jpg');border-radius:9px;" class="photo_how_block"></div>
       <div style="height:24px;margin-top:14px;font-size:.9em;">Божья коровка</div>
       <div style="font-size:14px;margin-top:11px;">5 июня в 15:15</div>
@@ -461,7 +472,7 @@ new Swiper('.mySwiper',{
 
 
 
-    <div style="display: inline-block;width:25%;margin-right:-7px;padding:9px 9px;" class="photo" onClick="setSlide(23);">
+    <div style="display: inline-block;width:25%;margin-right:-7px;padding:9px 9px;" class="photo">
       <div style="width: 100%;height:25vh;background-size: cover;background-position: center; background-image: url('20190620_141006.jpg');border-radius:9px;" class="photo_how_block"></div>
       <div style="height:24px;margin-top:14px;font-size:.9em;">Вид с окна</div>
       <div style="font-size:14px;margin-top:11px;">5 июня в 15:15</div>
@@ -547,52 +558,24 @@ new Swiper('.mySwiper',{
         object-fit: cover;
       }
     </style>
+
+    <script type="text/babel">
+
+
+    ReactDOM.render(
+
+<div className="footer__wrap">
+    <div className="footer__title"> Программист Исаев Тимур &copy;  2022 </div>
+     <a href="mailto:timka_issaev@mail.ru" className="footer_copy">timka_issaev@mail.ru</a>
+</div>
+
+,
+      document.getElementById('reacjs_footer')
+    );
+
+
+
+    </script>
 </body>
 
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-<script type="text/javascript">     
-
-</script>
-
-
-
-
-
-<div id="root"></div>
-
-
-   <script type="text/babel">
-    const rootNode = document.getElementById("root");    // элемент для рендеринга приложения React
-    // получаем корневой элемент 
-    const root = ReactDOM.createRoot(rootNode);
-    // рендеринг в корневой элемент
-    root.render(
-        <h1>Hello React</h1>  // элемент, который мы хотим создать
-     );
-   </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-       
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </html>
