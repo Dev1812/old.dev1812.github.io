@@ -7,7 +7,22 @@
   .photo__how_block{width:100%!important;height: 33vh!important;}
   .big-block__image {
     width: 93%!important;
+
   }
+  .nav-first{width: 100%!important;}
+
+  .photo2{
+    width: 100%;
+    padding: 0 24px;
+    margin: 0 auto;}
+
+    .head .head__link{padding:17px 9px!important;}
+    .head__wrap{width:100%!important;margin:0 auto;}
+    .head__link{
+    padding: 17px 11px!important;}
+.head__wrap{
+    padding: 0 12px;}
+
 }
 
 .big-block__welcome {text-align: center;padding: 154px 15px;line-height: 47px;border-bottom: 1px solid #DDD;background-color:#FBFBFB;}
