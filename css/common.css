@@ -1,0 +1,87 @@
+
+@font-face{font-family:'Myraid Set Pro Text';src:url('../myriad-set-pro_text.woff') format("woff")}
+*{box-sizing:border-box;font-size:1.0em;font-family:"Myraid Set Pro Text",tahoma,Arial,verdana,sans-serif;font-size:1.03em;}
+ html, body{margin:0;padding: 0;background-color: #FFF;font-family:"Myraid Set Pro Text",tahoma,Arial,verdana,sans-serif;}
+
+@media screen and (max-width: 479px) {
+  .photo__how_block{width:100%!important;height: 33vh!important;}
+  .big-block__image {
+    width: 93%!important;
+  }
+}
+
+.big-block__welcome {text-align: center;padding: 154px 15px;line-height: 47px;border-bottom: 1px solid #DDD;background-color:#FBFBFB;}
+.big-block__title{font-size: 2.0em;margin-bottom:34px;}
+.big-block__body{font-size:1.3em;}
+
+
+.photo__how_block{display: inline-block;width: 25%;height:34vh;margin-right:-5px;}
+.photo__image{ }
+.photo__image_wrap{padding:3px;}
+.photo_how_block{width:100%;height:25vh; position: relative;background-size: cover;background-position: center;border-radius:9px;margin:14px 0;}
+.big-block__image{width:74%;margin: 0 auto 34px;}
+.photo__title{text-align: center;font-size:1.0em;}
+
+
+
+.nav-first{border-bottom:1px solid #DDD;text-align: center;}
+.nav-first__link{padding:20px 14px;display: inline-block;color:#000;text-decoration: none;}
+.nav-first__link_active{color: blue;border-bottom: 1px solid blue;}
+
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+.swiper-scrollbar{display: none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .swiper-photo{width:40%;height:40%;background-position: center;background-size: cover;margin:94px;border-radius:14px;}
+
+
+
+#mySwiper0{background-color: #000; display: none;position: fixed;top:0;left:0;right:0;bottom:0;}
+
+html ,body{font-size:1.0em;font-family:"Myraid Set Pro Text",tahoma,Arial,verdana,sans-serif;font-size:1.03em;}
