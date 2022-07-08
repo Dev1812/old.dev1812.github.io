@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="icon" href="image/icon/favicon-16x16.png" type="image/png">
   <script src="js/swiper-bundle.min.js"></script>
-  <link rel="stylesheet" href="css/common.css?11">
+  <link rel="stylesheet" href="css/common.css?111">
   <script type="text/javascript">
 function showSlide(id) {
   document.getElementById('mySwiper0').style.display='block';
@@ -21,13 +21,32 @@ function showSlide(id) {
   <style type="text/css">
 .head__link{display: inline-block;color: #FFF;text-decoration: none;padding: 18px  24px;font-size:.9em;text-transform: uppercase;font-size:.8em;font-weight: bold;}
 .head__link:hover{background-color: #6a6565;}
-.info-block__title{font-size:1.1em;text-align: center;padding: 64px 0 44px;}
+#head{transition: all 0.34s ease;}
+.head__srcolled{background-color:#FFF!important ;color: #000!important;box-shadow: 0 0 9px #BBB;border-bottom: 1px solid #DDD;}
+
+.head__srcolled .head__link{color: #000;}
+
   </style>
 <!--head__container-->
 <div id="wrap1">
+<script type="text/javascript">
+window.onscroll=function(a) {
+  let posTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+  if(posTop > 74) {
 
-<div style="background-color:#283c46;height:55.9px;
-    opacity: .87;z-index: 14;position: fixed;top:0;left:0;right:0;box-shadow: 0 0 9px #808080;">
+
+
+    document.getElementById('head').classList.add('head__srcolled');
+  } else {
+
+    document.getElementById('head').classList.remove('head__srcolled');
+  }
+  //element.scrollTop
+}
+</script>
+
+
+<div id="head" style="background-color:transparent;height:55.9px;z-index: 14;position: fixed;top:0;left:0;right:0">
   <div class="head__wrap" style="width:73%;margin:0 auto;">
     <div style="float:left;">
       <a href="#" class="head__link"><b>ТИМУР</b></a>
@@ -35,20 +54,71 @@ function showSlide(id) {
     <div style="float:right">
       <a href="/index.html" class="head__link">Фото</a>
       <a href="/portfolio.html" class="head__link">Портфолио</a>
-      <a href="/wall.php" class="head__link">Стена</a>
+      <a href="/wall.html" class="head__link">Стена</a>
     </div>
   </div>
 </div>
+
+
 <div id="head__container"></div>
   
-<div class="big-block" style="margin-top: 49px;">
-  <div class="big-block big-block__welcome">
-      <div class="big-block__title">Привет!</div>
-      <div class="big-block__body">Я - Тимур Исаев, разработчик сайтов и программ</div>
+
+
+
+
+
+
+
+
+
+
+<div class="big_block">
+  <div style="height:64vh;position: relative;z-index: 10;">
+
+    <div style="width:100%;height:64vh;color:#FFF; background-image: url('https://images.wallpaperscraft.ru/image/single/kapli_listia_makro_317155_1440x2560.jpg');background-size: cover;background-position:center;background-position: center;position: absolute;top:0;left:0;right:0;bottom:0;"></div>
+    <div style="position:absolute;top:0;left:0;right:0;bottom:0;background-color:#000;z-index:10;opacity: .5;"></div>
+
+    <div style="width:100%;height:59vh;color:#FFF;;background-position: center;position: absolute;top:0;left:0;right:0;bottom:0;text-align: center;padding-top: 12%;z-index: 25;">
+      
+      <div style="font-size:2.5em;margin-bottom:24px">Привет!</div>
+      <div style="font-size:1.4em">Я - Тимур Исаев, разработчик сайтов и программ </div>
+    </div>
+
   </div>
 </div>
-<div class="big-block big-block__image">
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="big-block big-block__image">
 
 <div class="nav-first">
   <a class="nav-first__link" href="index.html" style="">Фото</a>
@@ -56,6 +126,11 @@ function showSlide(id) {
   <a class="nav-first__link nav-first__link_active" href="wall.html">Стена</a>
 </div>  
 
+
+
+<div class="content_v2">
+  <div style="text-align: center;margin:74px 0;">Здесь скоро будут мои записи</div>
+</div>
 <style type="text/css">
 .photo_how_block{transition:all 0.14s ease;}
 
@@ -63,25 +138,17 @@ function showSlide(id) {
 </style>
 
 
+<div></div>
 
-<div class="info-block">
-  <div class="info-block__title">Здесь будут мои записи</div>
-</div>
-
-
-
-
-<style type="text/css">
-.footer__mail{text-decoration: none;font-size:.87em;}
-.footer__mail:hover{color:#000;text-decoration: underline;}
-</style>
 
   <div style="border-top:1px solid #DDD;padding-top:24px;text-align: center;margin-top:34px;">
     <div style="margin-bottom:17px"><b>Исаев Тимур</b> &copy; 2022 </div>
-    <div><a href="mailto:timka_issaev@mail.ru" class="footer__mail">timka_issaev@mail.ru</a></div>
+    <div><a href="mailto:timka_issaev@mail.ru" style="
+    font-size: .87em;">timka_issaev@mail.ru</a></div>
   </div>
   
-  </div>
+
+
 </div>
 </body>
 </html>
