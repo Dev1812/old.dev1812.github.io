@@ -2,7 +2,7 @@
 @font-face{font-family:'Myraid Set Pro Text';src:url('../myriad-set-pro_text.woff') format("woff")}
 *{box-sizing:border-box;font-size:1.0em;font-family:"Myraid Set Pro Text",tahoma,Arial,verdana,sans-serif;font-size:1.03em;}
  html, body{margin:0;padding: 0;background-color: #FFF;font-family:"Myraid Set Pro Text",tahoma,Arial,verdana,sans-serif;}
-
+a{text-decoration: none;colr: blue;}
 @media screen and (max-width: 479px) {
   .photo__how_block{width:100%!important;height: 33vh!important;}
   .big-block__image {
