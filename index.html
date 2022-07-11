@@ -19,13 +19,19 @@ function showSlide(id) {
 </head>
 <body>
   <style type="text/css">
+
+
+
 .head__link{display: inline-block;color: #FFF;text-decoration: none;padding: 18px  24px;font-size:.9em;text-transform: uppercase;font-size:.8em;font-weight: bold;}
-.head__link:hover{background-color: #6a6565;}
-#head{transition: all 0.34s ease;}
+.head__link:hover{color:blue}
+.head .head__link{background-color: transparent;color: blue}
+
+
 .head__srcolled{background-color:#FFF!important ;color: #000!important;box-shadow: 0 0 9px #BBB;border-bottom: 1px solid #DDD;}
 
-.head__srcolled .head__link{color: #000;}
+.head__srcolled .head__link{color: #000;;}
 
+.head__srcolled .head__link:hover{color: blue!important}
   </style>
 <!--head__container-->
 <div id="wrap1">
@@ -52,9 +58,8 @@ window.onscroll=function(a) {
       <a href="#" class="head__link"><b>ТИМУР</b></a>
     </div>
     <div style="float:right">
-      <a href="/index.html" class="head__link">Фото</a>
-      <a href="/portfolio.html" class="head__link">Портфолио</a>
-      <a href="/wall.html" class="head__link">Стена</a>
+      <a href="index.html" class="head__link">Фото</a>
+      <a href="portfolio.html" class="head__link">Портфолио</a>
     </div>
   </div>
 </div>
@@ -123,7 +128,6 @@ window.onscroll=function(a) {
 <div class="nav-first">
   <a class="nav-first__link nav-first__link_active" href="index.html" style="">Фото</a>
   <a class="nav-first__link" href="portfolio.html">Портфолио</a>
-  <a class="nav-first__link" href="wall.html">Стена</a>
 </div>  
 
 <div class="photo__how_block" onClick="showSlide(0);">
