@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Сайт супер-повар</title>
+  <link rel="icon" href="image/icon/cafe.png" type="image/png">
+  <link rel="stylesheet" type="text/css" href="css/common.css?2">
+</head>
+<body>
+
+
+<div id="wrap1">
+
+<div class="head">
+  <a class="head__item" href="index.html"><b>Dev1812</b></a>
+  <span class="divider">|</span>
+  <a class="head__item" href="index.html">фото</a>
+  <span class="divider">|</span>
+  <a class="head__item" href="portfolio.html">портфолио</a>
+</div>
+<div class="content">
+
+<div>
+<div class="container-block" style="padding-top:51px;">
+
+<div class="nav">
+  <a class="nav__item" href="index.html">Обо мне</a>
+  <a class="nav__item" href="photo.html">Фото</a>
+  <a class="nav__item_active" href="portfolio.html">Портфолио</a>
+</div>
+
+<div class="container">
+	
+<div id="container1">
+
+<div class="multi-block" v-for="item of items" :key="item.photo">
+  <a :href="item.path">
+<div class="multi-block__wrap">
+<div class="multi-block__photo_wrap">
+<div class="multi-block__photo_wrap">
+  <img class="multi-block__photo" style="border: 1px solid #EEE;" src="image/04e26fa8bfc55b5a010f289e1d499ea1.jpg">
+  <img class="multi-block__photo" style="border: 1px solid #EEE;" src="image/96ef9aad697f4cc89a58e92651123610.jpg">
+</div>
+<div class="multi-block__info">
+  <div class="multi-block__info_title">
+    <div>Сайт супер-повар</div>
+  </div>
+<style type="text/css">
+.work_multi-block_body{line-height:21px;}
+</style>
+  <div class="multi-block_body work_multi-block_body">
+    Я создал сайт для конкурса Цифровой ветер.
+На сайте есть возможность создавать рецерты.
+Создание заняло к меня 3 недели.
+Для того, чтобы создавать рецепты, необходима Регистрация.
+Сайт создан с помощью html, css, js, php, mysql etc.
+Веб-сайт : http://n90302lz.beget.tech/
+  </div>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="footer" style="text-align:center;padding:14px 0 21px">
+
+<div class="footer-wrap">
+	<div style="margin-bottom:7px;">
+		<b>Исаев Тимур</b>
+	</div>
+	<div>
+		<a href="mailto:timka_issaev@mail.ru">timka_issaev@mail.ru</a>
+	</div>
+</div>
+
+</div>
+</div>
+</body>
+</html>

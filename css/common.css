@@ -1,105 +1,49 @@
 
-@font-face{font-family:'Myraid Set Pro Text';src:url('../myriad-set-pro_text.woff') format("woff")}
-*{box-sizing:border-box;font-size:1.0em;font-family:"Myraid Set Pro Text",tahoma,Arial,verdana,sans-serif;font-size:1.03em;}
- html, body{margin:0;padding: 0;background-color: #FFF;font-family:"Myraid Set Pro Text",tahoma,Arial,verdana,sans-serif;}
-a{text-decoration: none;colr: blue;}
-@media screen and (max-width: 479px) {
-  .photo__how_block{width:100%!important;height: 33vh!important;}
-  .big-block__image {
-    width: 93%!important;
+	.head{border-bottom:1px solid #000;text-align: center;height:54px;background-color: #000;position: fixed;top: 0;left: 0;right: 0;z-index: 11;}
+	.head__item{display: inline-block; padding:18px 9px;color:#fff;}
+	.divider{padding:0 9px;color: #FFF;}
+	html, body{margin:0;}
 
-  }
-  .nav-first{width: 100%!important;}
+*{box-sizing:border-box;font-size:1.0em;font-family:"Myraid Set Pro Text",tahoma,Arial,verdana,sans-serif;font-size:.99em;}
+    .welcome_block-main{position: relative;height:454px;}
 
-  .photo2{
-    width: 100%;
-    padding: 0 24px;
-    margin: 0 auto;}
+a{text-decoration: none;}
+.welcome_block-main__photo{position: absolute;top: 0;left: 0;right: 0;bottom: 0;background-size:cover;background-position: center;}
 
-    .head .head__link{padding:17px 9px!important;}
-    .head__wrap{width:100%!important;margin:0 auto;}
-    .head__link{
-    padding: 19px 11px!important;}
-.head__wrap{
-    padding: 0 12px;}
-
-}
-
-.big-block__welcome {text-align: center;padding: 154px 15px;line-height: 47px;border-bottom: 1px solid #DDD;background-color:#FBFBFB;}
-.big-block__title{font-size: 2.0em;margin-bottom:34px;}
-.big-block__body{font-size:1.3em;}
-
-
-.photo__how_block{display: inline-block;width: 25%;height:34vh;margin-right:-5px;}
-.photo__image{ }
-.photo__image_wrap{padding:3px;}
-.photo_how_block{width:100%;height:25vh; position: relative;background-size: cover;background-position: center;border-radius:9px;margin:14px 0;}
-.big-block__image{width:74%;margin: 0 auto 34px;}
-.photo__title{text-align: center;font-size:1.0em;}
+.welcome_block-main__photo_layer{position: absolute;top: 0;left: 0;right: 0;bottom: 0;background-color:#000;opacity:.4;}
+.welcome_block-main__photo_body{color:#FFF;z-index:9;position: absolute;top:0;left: 0;right: 0;bottom: 0;text-align: center;}
+.welcome_block-main__photo_body_title{font-size:2.9em;margin: 134px 0 24px}
+.welcome_block-main__photo_body_body{font-size:1.5em;}
 
 
 
-.nav-first{border-bottom:1px solid #DDD;text-align: center;}
-.nav-first__link{padding:20px 14px;display: inline-block;color:#000;text-decoration: none;}
-.nav-first__link_active{color: blue;border-bottom: 1px solid blue;}
-
-
-.swiper {
-  width: 600px;
-  height: 300px;
-}
-.swiper-scrollbar{display: none;}
+.nav{border-bottom:1px solid #DDD;text-align: center;}
+.nav__item{display: inline-block;padding:24px 14px;font-size:1.1em;}
+.container-block{width:80%;margin:0 auto;/**padding-top:51px;*/}
+.container{text-align:center;padding:24px 0;}
 
 
 
 
 
+.multi-block{display: inline-block;width:25%;margin:-2px -3px 14px;text-align: center;vertical-align: top;}
+.multi-block__photo{width:100%;height:25vh;background-size: cover  ;background-position: center  ;border-radius:14px; }
+.multi-block__info_title{margin:9px 0;max-height:67px;overflow: hidden;line-height:21px;font-weight: bold;}
+.feed_page{width:74%;margin:0 auto;padding:14px 0;}
+.icon{width:17px;height:17px;display: inline-block;}
+
+.multi-block__mark_block{display: inline-block;
+    padding: 2px 8px 2px 8px;border-radius:9px;
+   background-color:#EEE;cursor: pointer;}
+.multi-block__mark_block:hover{background-color:#DDD;}
+   .multi-block__counter_title{font-size:.9em;font-weight: bold;position:relative;top:-2px;}
+   .photo_bigger{background-position: center;background-size: cover;}
+.multi-block__wrap{margin:4px;}
 
 
+.footer{border-top:1px solid #DDD;text-align:center;padding:14px 0 21px}
 
+.nav__item{color:#000;}
+.nav__item_active{color:blue;border-bottom: 1px solid blue;}
 
-
-
-
-
-      .swiper {
-        width: 100%;
-        height: 100%;
-      }
-
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-      }
-
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-      .swiper-photo{
-    width: 47%;
-    height: 47%;background-position: center;background-size: cover;margin:94px;border-radius:14px;}
-
-
-
-#mySwiper0{background-color: #000; display: none;position: fixed;top:0;left:0;right:0;bottom:0;
-    z-index: 99;}
-
-html ,body{font-size:1.0em;font-family:"Myraid Set Pro Text",tahoma,Arial,verdana,sans-serif;font-size:1.03em;}
+.work_multi-block_body{line-height:21px;}

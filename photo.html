@@ -2,80 +2,100 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Dev1812</title>
+  <link rel="icon" href="image/icon/cafe.png" type="image/png">
   <link rel="stylesheet" type="text/css" href="css/common.css?2">
 </head>
 <body>
 
 
 <div id="wrap1">
+	<style type="text/css">
+	.head{border-bottom:1px solid #000;text-align: center;height:54px;background-color: #000;position: fixed;top: 0;left: 0;right: 0;z-index: 11;}
+	.head__item{display: inline-block; padding:18px 9px;color:#fff;}
+	.divider{padding:0 9px;color: #FFF;}
+	html, body{margin:0;}
+
+*{box-sizing:border-box;font-size:1.0em;font-family:"Myraid Set Pro Text",tahoma,Arial,verdana,sans-serif;font-size:.99em;}
+    .welcome_block-main{position: relative;height:454px;}
+
+
+.welcome_block-main__photo{position: absolute;top: 0;left: 0;right: 0;bottom: 0;background-size:cover;background-position: center;}
+
+.welcome_block-main__photo_layer{position: absolute;top: 0;left: 0;right: 0;bottom: 0;background-color:#000;opacity:.4;}
+.welcome_block-main__photo_body{color:#FFF;z-index:9;position: absolute;top:0;left: 0;right: 0;bottom: 0;text-align: center;}
+.welcome_block-main__photo_body_title{font-size:2.9em;margin: 134px 0 24px}
+.welcome_block-main__photo_body_body{font-size:1.5em;}
+
+
+
+
+
+
+
+	</style>
 
 <div class="head">
-  <a class="head__item" href="index.html"><b>Dev1812</b></a>
+  <a class="head__item"><b>Dev1812</b></a>
   <span class="divider">|</span>
-  <a class="head__item" href="index.html">фото</a>
+  <a class="head__item">фото</a>
   <span class="divider">|</span>
-  <a class="head__item" href="portfolio.html">портфолио</a>
+  <a class="head__item">портфолио</a>
 </div>
-<div class="content">
+<div class="contant">
 
 <div>
-<div class="container-block" style="padding-top:51px;">
+
+<style type="text/css">
+.nav{border-bottom:1px solid #DDD;text-align: center;}
+.nav__item{display: inline-block;padding:24px 14px;font-size:1.1em;}
+.container-block{width:80%;margin:0 auto;}
+.container{text-align:center;padding:24px 0;}
+</style>
+
+<div class="container-block" style="padding-top:54px">
 
 <div class="nav">
 <a class="nav__item" href="index.html">Обо мне</a>
-<a class="nav__item" href="photo.html">Фото</a>
-<a class="nav__item" href="portfolio.html" style="color:blue;border-bottom: 1px solid blue;">Портфолио</a>
+<a class="nav__item" href="photo.html" style="color:blue;border-bottom: 1px solid blue;">Фото</a>
+<a class="nav__item" href="portfolio.html">Портфолио</a>
 </div>
-
-
 
 <div class="container">
 	
-<div id="container1">
 
-<div class="multi-block" v-for="item of items" :key="item.photo">
-  <a :href="item.path">
+<style type="text/css">
+
+
+
+.multi-block{display: inline-block;width:25%;margin:-2px -3px 14px;text-align: center;vertical-align: top;}
+.multi-block__photo{width:100%;height:25vh;background-size: cover  ;background-position: center  ;border-radius:14px; }
+.multi-block__info_title{margin:9px 0;max-height:67px;overflow: hidden;line-height:21px;font-weight: bold;}
+.feed_page{width:74%;margin:0 auto;padding:14px 0;}
+.icon{width:17px;height:17px;display: inline-block;}
+
+.multi-block__mark_block{display: inline-block;
+    padding: 2px 8px 2px 8px;border-radius:9px;
+   background-color:#EEE;cursor: pointer;}
+.multi-block__mark_block:hover{background-color:#DDD;}
+   .multi-block__counter_title{font-size:.9em;font-weight: bold;position:relative;top:-2px;}
+   .photo_bigger{background-position: center;background-size: cover;}
+.multi-block__wrap{margin:4px;}
+</style>
+
+<div class="multi-block">
 <div class="multi-block__wrap">
 <div class="multi-block__photo_wrap">
-<div class="multi-block__photo_wrap">
-
-  <div class="multi-block__photo" :style="{ 'background-image': 'url(' + item.photo + ')' }">
-
+  <div class="multi-block__photo" style="background-image: url('image/20180408_212136.jpg');"></div>
 </div>
 <div class="multi-block__info">
   <div class="multi-block__info_title">
-    <div style="color:#000;">{{item.title}}</div>
+    <div>Без названия</div>
   </div>
 </div>
 </div>
 </div>
-</a>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/vue@2.7.8"></script>
-<script type="text/javascript">
-  var example1 = new Vue({
-  el: '#container1',
-  data: {
-    image: 'https://picsum.photos/600/200',
-    items: [
-      { photo: 'image/04e26fa8bfc55b5a010f289e1d499ea1.jpg', 
-        title:'Сайт супер-повар',
-        path: 'work_1.html' },
-      { photo: 'image/499455782.png', 
-        title:'Android-приложение про Юрия Гагарина',
-        path: 'work_2.html' },
-      { photo: 'image/499456018.png', 
-        title:'Сайт про защиту бизнеса',
-        path: 'work_3.html' },
-      { photo: 'image/546417671.jpg', 
-        title:'Разработка на Java ',
-        path: 'work_4.html' }
-    ]
-  }
-})
-</script>
-<!--
+
 <div class="multi-block">
 <div class="multi-block__wrap">
 <div class="multi-block__photo_wrap">
@@ -191,23 +211,34 @@
 </div>
 </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </div>
 
-</div>-->
+</div></div>
 </div>
 </div>
-<div class="footer" style="text-align:center;padding:14px 0 21px">
-
-<div class="footer-wrap">
-	<div style="margin-bottom:7px;">
-		<b>Исаев Тимур</b>
-	</div>
-	<div>
-		<a href="mailto:timka_issaev@mail.ru">timka_issaev@mail.ru</a>
-	</div>
-</div>
-
-</div>
+<div class="footer"></div>
 </div>
 </body>
 </html>
